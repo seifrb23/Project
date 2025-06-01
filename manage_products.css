@@ -1,0 +1,181 @@
+/* General table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+button {
+    cursor: pointer;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+/* Action buttons */
+.openPromoBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+.openPromoBtn:hover {
+    background-color: #0056b3;
+}
+
+.deleteBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.deleteBtn:hover {
+    background-color: #a71d2a;
+}
+
+/* Popup message styling */
+.popup-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-success {
+    background-color: #28a745;
+}
+
+.popup-error {
+    background-color: #dc3545;
+}
+
+/* Promotion form popup */
+#promoFormContainer {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f9f9f9;
+    padding: 20px 30px;
+    border: 2px solid #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    z-index: 2000;
+    width: 320px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+#promoFormContainer h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+#promoFormContainer label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+#promoFormContainer input[type="number"],
+#promoFormContainer input[type="datetime-local"],
+#promoFormContainer input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#promoFormContainer input[type="number"]:focus,
+#promoFormContainer input[type="datetime-local"]:focus,
+#promoFormContainer input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#promoFormContainer button {
+    padding: 8px 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#promoFormContainer button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+}
+
+#promoFormContainer button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+#promoFormContainer button#closePromoForm {
+    background-color: #dc3545;
+    color: white;
+}
+
+#promoFormContainer button#closePromoForm:hover {
+    background-color: #a71d2a;
+}
+
+/* Overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-message {
+    max-width: 600px;
+    margin-right: 45%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.popup-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.popup-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
